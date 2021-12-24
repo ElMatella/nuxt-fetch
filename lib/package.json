@@ -1,0 +1,9 @@
+{
+  "name": "nuxt-fetch",
+  "version": "0.0.1",
+  "description": "A component allowing you to use the fetch capabilities of Nuxt",
+  "main": "src/NuxtFetch.js",
+  "author": "Mathieu Marteau",
+  "license": "MIT",
+  "private": false
+}
