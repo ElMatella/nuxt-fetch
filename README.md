@@ -14,23 +14,28 @@ yarn add @hammerbot/nuxt-fetch
 <template>
   <div>
     <nuxt-fetch :fetch-fn="fetchFn">
+    
       <template #default="{ data, fetching, error }">
         <p>
           {{ data }} - {{ fetching }} - {{ error }}
         </p>
       </template>
+      
       <template #fetching>
         Fetching for the first time
       </template>
+      
       <template #error="{ error }">
         Error handling {{ error }}
       </template>
+      
     </nuxt-fetch>
   </div>
 </template>
 
 <script >
 import NuxtFetch from '@hammerbot/nuxt-fetch' 
+
 export default {
   components: {
     NuxtFetch
